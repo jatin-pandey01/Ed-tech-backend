@@ -100,7 +100,7 @@ exports.showAllCourses = async(req,res)=>{
 
 
 //getCourseDetails
-exports.gatCourseDetails = async(req,res)=>{
+exports.getCourseDetails = async(req,res)=>{
     try {
         //Get course ID
         const {courseId} = req.body;

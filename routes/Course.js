@@ -2,7 +2,16 @@
 const express = require("express")
 const router = express.Router()
 
-// // Import the Controllers
+// Import the Controllers
+
+const {createCourse,getCourseDetails,showAllCourses} = require("../controllers/Course");
+const {auth,isInstructor} = require("../middlewares/auth");
+
+router.post("/createCourse", auth , isInstructor, createCourse);
+router.get("/getCourseDetails",getCourseDetails);
+router.get("/getAllCourse",showAllCourses);
+
+module.exports = router;
 
 // // Course Controllers Import
 // const {

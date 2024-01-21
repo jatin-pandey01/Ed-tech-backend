@@ -14,7 +14,7 @@ router.get("/getUserDetails" , auth , getAllUserDetails);
 router.delete("/deleteProfile" , auth , deleteAccount);
 router.get("/getEnrolledCourse" , auth , getEnrolledCourses);
 
-
+module.exports = router;
 // const {
 //   deleteAccount,
 //   updateProfile,
